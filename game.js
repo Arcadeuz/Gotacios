@@ -547,7 +547,7 @@ window.onload = function() {
 				res = act / number;								
 			}
 			console.log(Math.floor(Math.min(10**(expon+1), Math.max(res,1))));
-			return   Math.floor(Math.min(10**(expon+1), Math.max(res,1)));
+			return  0;
 					
 		}
 		
