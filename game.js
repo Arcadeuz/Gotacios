@@ -546,6 +546,7 @@ window.onload = function() {
 			}else if (simb == 19){
 				res = act / number;								
 			}
+			console.log(Math.min(10**(expon+2)),Math.max(res,1));
 			return Math.floor(Math.min(10**(expon+2)),Math.max(res,1));
 		}
 		
