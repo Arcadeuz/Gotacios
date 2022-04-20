@@ -1,6 +1,7 @@
 enchant();
 
 window.onload = function() {
+	
 	game = new Game(720, 400); // Game rendering view
    console.log(screen.width/2+","+ screen.height/2);
 	var mTam = 30;
@@ -545,7 +546,7 @@ window.onload = function() {
 			}else if (simb == 19){
 				res = act / number;								
 			}
-			return Math.floor(Math.min(10**(expon+1)),Math.max(res,1));
+			return Math.floor(Math.min(10**(expon+2)),Math.max(res,1));
 		}
 		
 		function ResCalc(act,simb,number){
