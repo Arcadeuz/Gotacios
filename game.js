@@ -2,7 +2,7 @@ enchant();
 
 window.onload = function() {
 	
-	game = new Game(screen.width/2, screen.height/2.25); // Game rendering view
+	game = new Game(720, 400); // Game rendering view
    console.log(screen.width/2+","+ screen.height/2);
 	var mTam = 30;
 	var expon = 0;
