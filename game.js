@@ -2,8 +2,16 @@ enchant();
 
 window.onload = function() {
 	
-	game = new Game(720, 400); // Game rendering view
-   console.log(screen.width/2+","+ screen.height/2);
+	//game = new Game(screen.width/2, screen.height/2.25); // Game rendering view
+	let w = screen.width;
+	let h = screen.height;
+	let wP = (1.8*h<w)? 1.8 * (w-1.8*h):0;
+	let hP = 0;
+	//wP = 140; 
+	//wP = 0;
+	game = new Game(720 + wP, 400+hP); // Game rendering view
+	  console.log(wP);
+   console.log(screen.width/2+","+ screen.height/2.25);
 	var mTam = 30;
 	var expon = 0;
 	var ecu = 4; // suma, resta, division, multiplicacion
@@ -238,6 +246,8 @@ window.onload = function() {
 		hist.frame = 0;
 		
 		var buttons = new Group();
+		buttons.x = buttons.x + wP;
+		
 		buttons.addChild(ExText);
 		buttons.addChild(bE0);
 		
